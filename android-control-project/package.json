@@ -1,0 +1,39 @@
+{
+  "name": "android-device-control-system",
+  "version": "1.0.0",
+  "description": "Control system for managing multiple Android devices to download and publish videos",
+  "main": "code-samples/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "jest"
+  },
+  "author": "Devin AI",
+  "license": "MIT",
+  "dependencies": {
+    "antd": "^4.24.10",
+    "electron-store": "^8.1.0",
+    "moment": "^2.29.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webdriverio": "^8.16.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5",
+    "electron": "^25.3.1",
+    "electron-builder": "^24.6.3",
+    "jest": "^29.6.1"
+  },
+  "build": {
+    "appId": "com.devin.android-control",
+    "productName": "Android Device Control System",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  }
+}
